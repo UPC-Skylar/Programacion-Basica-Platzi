@@ -10,12 +10,15 @@
       href="./Imagenes/528101.png"
       type="image/x-icon"
     />
+    <!-- defer le dice al navegador que primero cargue la estructura del HTML y
+    finalmente la del js, para evitar problemas -->
+    <script defer src="./JS/code.js"></script>
   </head>
   <body>
     <h1>POKÉMON!🔥💧🌿</h1>
+    <!-- Aqui definimos la seccion de seleccionar mascota -->
     <section id="seleccionar-mascota">
       <h2>Selecciona tu pokemón:</h2>
-      <button>Seleccionar</button>
       <input type="radio" name="poke" id="Charmander" />
       <label for="Charmander">Charmander 🔥</label>
       <input type="radio" name="poke" id="Bulbasaur" />
@@ -28,15 +31,17 @@
       <label for="Lotad">Lotad 💧🌿</label>
       <input type="radio" name="poke" id="Scovillain" />
       <label for="Scovillain">Scovillain 🔥🌿</label>
+      <button id="boton-pokemon">Seleccionar</button>
     </section>
+    <!-- Este apartado sirve para seleccionar ataques -->
     <section id="seleccionar-ataque">
       <h2>Elige tu ataque:</h2>
       <p>Tu pokémon tiene <span>3</span> vidas</p>
       <p>El pokémon enemigo tiene <span>3</span> vidas</p>
       <p>
-        <button>Fuego🔥</button>
-        <button>Agua💧</button>
-        <button>Planta🌿</button>
+        <button id="boton-fuego">Fuego🔥</button>
+        <button id="boton-agua">Agua💧</button>
+        <button id="boton-planta">Planta🌿</button>
       </p>
     </section>
 
@@ -48,7 +53,7 @@
     </section>
 
     <section id="reiniciar">
-      <button>Reiniciar</button>
+      <button id="boton-reiniciar">Reiniciar</button>
     </section>
   </body>
 </html>
